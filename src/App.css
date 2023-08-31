@@ -7,6 +7,78 @@
   pointer-events: none;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+.header-text h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+
+.round-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #ec8d08;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.round-button:hover {
+  background-color: #aaa;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.round-button-mobile {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #ec8d08;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.round-button-mobile:hover {
+  background-color: #aaa;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-image {
+  max-width: 100px;
+  height: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
