@@ -23,7 +23,7 @@ function Header(){
   return(
     <div className="header">
     <div className="header-text">
-      <h1>DIRECTORIO</h1>
+      <h1>WEB</h1>
     </div>
     <img src={headerImage} alt="Header" className="header-image" />
     <div className="header-buttons">
